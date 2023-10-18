@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: #1d1b1c
+}
+
+/* Animación */
+.fa-flip {
+  animation: fa-flip var(--fa-animation-duration, 1s) var(--fa-animation-timing, ease-in-out) var(--fa-animation-iteration-count, infinite) var(--fa-animation-delay, 0s);
+}
+
+/* Animación keyframes */
+@keyframes fa-flip {
+  50% {
+    transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
