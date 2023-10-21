@@ -14,6 +14,7 @@ function Square({ p, h2, color, opacidad }) {
     letterSpacing: "-.01em",
     textTransform: "capitalize",
     padding: "30px",
+    marginTop: "-120px",
   });
 
   const [estilosH2, setEstilosH2] = useState({
@@ -58,7 +59,7 @@ function Square({ p, h2, color, opacidad }) {
 
   const handleMouseLeave = () => {
     setMostrarTitulo(false);
-    setEstilosP({ 
+    setEstilosP({
       position: "relative",
       width: "100%",
       fontFamily: "Segoe UI Symbol",
@@ -69,6 +70,7 @@ function Square({ p, h2, color, opacidad }) {
       letterSpacing: "-.01em",
       textTransform: "capitalize",
       padding: "30px",
+      marginTop: "-120px",
     });
     setEstilosH2({
       display: "none",
@@ -77,7 +79,7 @@ function Square({ p, h2, color, opacidad }) {
 
   return (
     <div
-      className="cuadro1 cuadro w-full relative flex flex-wrap content-center items-center p-[15px] cursor-pointer transition-all duration-700"
+      className="cuadro1 cuadro w-full lg:w-[33%] relative flex flex-wrap content-center items-center p-[15px] cursor-pointer transition-all duration-700 lg:translate-y-[130px] lg:hover:translate-y-0"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -85,11 +87,11 @@ function Square({ p, h2, color, opacidad }) {
         style={{ background: color, opacity: opacidad }}
         className="capa absolute w-full h-full m-[-15px] z-0"
       ></div>
-      <p style={estilosP} className="subtitulo">
+      <p style={estilosP} className="subtitulo max-lg:mt-0 lg:hover:mt-[0px] text-center lg:text-left">
         {p}
       </p>
       {MostrarTitulo && (
-        <h2 style={estilosH2} className="titulo">
+        <h2 style={estilosH2} className="titulo text-center lg:text-left">
           {h2}
         </h2>
       )}
