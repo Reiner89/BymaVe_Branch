@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import Cliente1 from '../Static/clientes/Transportes-Morales.webp'
-// import Cliente2 from '../Static/clientes/Yelitze-Sanchez.webp'
 import Cliente3 from '../Static/clientes/Comercial-Elias.webp'
 import Cliente4 from '../Static/clientes/MR-Logistick.webp'
 import Cliente2 from '../Static/clientes/Yelitze-Sanchez-blanco.webp'

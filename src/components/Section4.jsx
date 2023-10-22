@@ -5,7 +5,7 @@ function Section4() {
   return (
     <>
       <div
-        className="cont-section duration-700 relative w-full bg-no-repeat bg-cover bg-scroll bg-center p-[0_0_0_35vh]"
+        className="cont-section duration-700 relative w-full bg-no-repeat bg-cover bg-scroll bg-center lg:p-[0_0_0_35vh]"
         style={{ backgroundImage: `url(${ImagenCont4})` }}
       >
         <div className="fondo duration-700 absolute bg-black h-full w-full opacity-50 top-0 left-0"></div>
@@ -14,7 +14,9 @@ function Section4() {
             <div className="vacio1 w-full h-[26vh]"></div>
             <div className="cont-titulo duration-700 relative flex w-full">
               <div className="elegirnos duration-700 relative flex flex-wrap content-start w-[89%]">
-                <h2 className="titulo duration-700 text-white text-[60px] font-bold leading-[60px] tracking-[-0.02em]">¿Por qué Elegirnos?</h2>
+                <h2 className="titulo duration-700 text-white text-[60px] font-bold leading-[60px] tracking-[-0.02em]">
+                  ¿Por qué Elegirnos?
+                </h2>
               </div>
               <div className="vacio relative w-[10%]"></div>
             </div>

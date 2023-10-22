@@ -1,9 +1,9 @@
 import BgVideo from "../Static/cont_home/Equipo.mp4";
 import Square from "./Square";
 import NavbarMenu from "./Navbar";
-import NavbarMovil from './NavbarMovil'
+import NavbarMovil from "./NavbarMovil";
 
-export function Main() {
+function Main() {
   return (
     <>
       <div className="fondo hidden lg:block">
@@ -108,3 +108,5 @@ export function Main() {
     </>
   );
 }
+
+export default Main;
